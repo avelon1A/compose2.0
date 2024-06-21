@@ -17,13 +17,15 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.bosch.composewithkotlin20.ui.screen.ScreenB
 import com.bosch.composewithkotlin20.ui.screen.ScreenC
+import com.bosch.composewithkotlin20.ui.screen.ThirdScreen
 import kotlinx.serialization.Serializable
 
 @Composable
 fun HomeScreen(navController: NavController) {
     val buttonList = listOf(
         ButtonInfo("first ", ScreenB),
-        ButtonInfo("Second", ScreenC),
+        ButtonInfo("expand text", ScreenC),
+        ButtonInfo("Box layout", ThirdScreen),
 
     )
 

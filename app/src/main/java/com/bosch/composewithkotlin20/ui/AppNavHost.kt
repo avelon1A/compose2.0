@@ -10,7 +10,9 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.bosch.composewithkotlin20.ui.screen.ScreenB
 import com.bosch.composewithkotlin20.ui.screen.ScreenC
+import com.bosch.composewithkotlin20.ui.screen.ThirdScreen
 import com.bosch.composewithkotlin20.ui.screen.home.HomeScreen
+import com.bosch.composewithkotlin20.ui.screen.TextScreen
 
 
 @Composable
@@ -18,7 +20,7 @@ fun AppNavHost(navController: NavHostController) {
     NavHost(
         navController = navController,
         startDestination = HomeScreen,
-        modifier = Modifier.padding(top = 100.dp)
+        modifier = Modifier.padding(top = 50.dp)
     ) {
         composable<HomeScreen> {
             HomeScreen(navController = navController)
@@ -29,6 +31,13 @@ fun AppNavHost(navController: NavHostController) {
         composable<ScreenC> {
             ScreenC(navController = navController)
         }
+        composable<ThirdScreen> {
+            ThirdScreen(navController = navController)
+        }
+        composable<TextScreen> {
+            TextScreen()
+        }
+
     }
 }
 
