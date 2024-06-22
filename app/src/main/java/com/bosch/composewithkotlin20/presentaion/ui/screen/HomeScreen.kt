@@ -1,4 +1,4 @@
-package com.bosch.composewithkotlin20.ui.screen.home
+package com.bosch.composewithkotlin20.presentaion.ui.screen
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -15,9 +15,6 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
-import com.bosch.composewithkotlin20.ui.screen.ScreenB
-import com.bosch.composewithkotlin20.ui.screen.ScreenC
-import com.bosch.composewithkotlin20.ui.screen.ThirdScreen
 import kotlinx.serialization.Serializable
 
 @Composable
@@ -26,6 +23,9 @@ fun HomeScreen(navController: NavController) {
         ButtonInfo("first ", ScreenB),
         ButtonInfo("expand text", ScreenC),
         ButtonInfo("Box layout", ThirdScreen),
+        ButtonInfo("Text", TextScreen),
+        ButtonInfo("Text Selection", TextSelectable),
+        ButtonInfo("TextField", TextField)
 
     )
 

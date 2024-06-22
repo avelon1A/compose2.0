@@ -1,4 +1,4 @@
-package com.bosch.composewithkotlin20.ui
+package com.bosch.composewithkotlin20.presentaion.ui
 
 
 import androidx.compose.foundation.layout.padding
@@ -8,12 +8,7 @@ import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.bosch.composewithkotlin20.ui.screen.ScreenB
-import com.bosch.composewithkotlin20.ui.screen.ScreenC
-import com.bosch.composewithkotlin20.ui.screen.ThirdScreen
-import com.bosch.composewithkotlin20.ui.screen.home.HomeScreen
-import com.bosch.composewithkotlin20.ui.screen.TextScreen
-
+import com.bosch.composewithkotlin20.presentaion.ui.screen.*
 
 @Composable
 fun AppNavHost(navController: NavHostController) {
@@ -36,6 +31,12 @@ fun AppNavHost(navController: NavHostController) {
         }
         composable<TextScreen> {
             TextScreen()
+        }
+        composable<TextSelectable> {
+            TextSelectable()
+        }
+        composable<TextField> {
+            TextField()
         }
 
     }

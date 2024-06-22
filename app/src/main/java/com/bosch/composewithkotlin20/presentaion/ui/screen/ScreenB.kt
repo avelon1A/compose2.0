@@ -1,4 +1,4 @@
-package com.bosch.composewithkotlin20.ui.screen
+package com.bosch.composewithkotlin20.presentaion.ui.screen
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column

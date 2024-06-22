@@ -1,4 +1,4 @@
-package com.bosch.composewithkotlin20.ui.screen
+package com.bosch.composewithkotlin20.presentaion.ui.screen
 
 import android.graphics.drawable.Icon
 import androidx.compose.animation.animateContentSize

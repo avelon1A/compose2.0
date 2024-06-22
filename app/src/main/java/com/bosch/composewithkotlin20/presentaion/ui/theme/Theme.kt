@@ -1,4 +1,4 @@
-package com.bosch.composewithkotlin20.ui.theme
+package com.bosch.composewithkotlin20.presentaion.ui.theme
 
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
