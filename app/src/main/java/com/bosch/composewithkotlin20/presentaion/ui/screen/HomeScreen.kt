@@ -25,7 +25,8 @@ fun HomeScreen(navController: NavController) {
         ButtonInfo("Box layout", ThirdScreen),
         ButtonInfo("Text", TextScreen),
         ButtonInfo("Text Selection", TextSelectable),
-        ButtonInfo("TextField", TextField)
+        ButtonInfo("TextField", TextField),
+        ButtonInfo("custom buttin google signup", GoogleButtonScreen)
 
     )
 

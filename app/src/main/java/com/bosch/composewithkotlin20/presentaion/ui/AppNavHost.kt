@@ -38,6 +38,10 @@ fun AppNavHost(navController: NavHostController) {
         composable<TextField> {
             TextField()
         }
+        composable<GoogleButtonScreen> {
+            GoogleButtonScreen()
+        }
+        
 
     }
 }
