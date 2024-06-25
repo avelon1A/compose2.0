@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">compose with kotlin 2.0</string>
+    <string name="description">coil image</string>
 </resources>

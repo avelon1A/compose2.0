@@ -41,6 +41,9 @@ fun AppNavHost(navController: NavHostController) {
         composable<GoogleButtonScreen> {
             GoogleButtonScreen()
         }
+        composable<CoilScreen> {
+            CoilScreen()
+        }
         
 
     }

@@ -37,3 +37,5 @@ Eapp/src/main/java/com/bosch/composewithkotlin20/base/MyApplication.kt,b\c\bcd4
 Uapp/src/main/java/com/bosch/composewithkotlin20/presentaion/ui/screen/GoogleButton.kt,d\f\dfb157704e89d5e03aabc941d3ab653cf0bbd2c7
 T
 $.idea/codeStyles/codeStyleConfig.xml,d\d\dd7b3350c29c49497756c7f32c69a3bed18b1cba
+ƒ
+Sapp/src/main/java/com/bosch/composewithkotlin20/presentaion/ui/screen/CoilScreen.kt,8\7\87657f41c2b14c5b24ea70b4c8a77f6cc9c2cd6c
