@@ -1,8 +1,10 @@
 [versions]
 agp = "8.4.1"
+cameraViewfinderCompose = "1.0.0-alpha02"
 coil = "2.4.0"
 coilCompose = "2.6.0"
 converterGson = "2.9.0"
+daggerCompiler = "2.48"
 foundation = "1.6.8"
 hiltNavigationFragment = "1.2.0"
 kotlin = "2.0.0"
@@ -14,17 +16,26 @@ lifecycleRuntimeKtx = "2.8.2"
 activityCompose = "1.9.0"
 composeBom = "2023.08.00"
 composeNavigation = "2.8.0-alpha08"
+material = "1.6.8"
 retrofit = "2.9.0"
 serialization = "1.6.3"
+ui = "1.6.8"
+uiToolingPreview = "1.6.8"
+ksp = "2.0.0-1.0.21"
+hilt = "2.49"
 
 [libraries]
+androidx-camera-viewfinder-compose = { module = "androidx.camera:camera-viewfinder-compose", version.ref = "cameraViewfinderCompose" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 androidx-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "foundation" }
 androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationFragment" }
 androidx-hilt-navigation-fragment = { module = "androidx.hilt:hilt-navigation-fragment", version.ref = "hiltNavigationFragment" }
+androidx-material = { module = "androidx.compose.material:material", version.ref = "material" }
 coil = { module = "io.coil-kt:coil", version.ref = "coil" }
 coil-compose = { module = "io.coil-kt:coil-compose", version.ref = "coilCompose" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
+dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "daggerCompiler" }
+hilt-compiler = { module = "com.google.dagger:hilt-compiler", version.ref = "daggerCompiler" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -41,11 +52,15 @@ androidx-material3 = { group = "androidx.compose.material3", name = "material3" 
 navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "composeNavigation" }
 kotlinx-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization"}
 retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
-
+ui = { module = "androidx.compose.ui:ui", version.ref = "ui" }
+ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "uiToolingPreview" }
+hilt-android-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hilt" }
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-org-jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 compose-compiler = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }

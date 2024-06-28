@@ -27,7 +27,11 @@ fun HomeScreen(navController: NavController) {
         ButtonInfo("Text Selection", TextSelectable),
         ButtonInfo("TextField", TextField),
         ButtonInfo("custom buttin google signup", GoogleButtonScreen),
-        ButtonInfo("coil screen", CoilScreen)
+        ButtonInfo("coil screen", CoilScreen),
+        ButtonInfo("gradiant screen", GradientScreen),
+        ButtonInfo("camera", CameraScreen),
+        ButtonInfo("login screen", LoginScreen)
+        
 
     )
 
