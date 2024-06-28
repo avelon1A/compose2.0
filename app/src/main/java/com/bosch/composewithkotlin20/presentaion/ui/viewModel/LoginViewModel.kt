@@ -33,10 +33,10 @@ class LoginViewModel @Inject constructor(
 		_password.value = newPassword
 	}
 	
-	fun login() {
+	fun login(username:String,password:String) {
 		viewModelScope.launch {
 			_loginState.value = ApiState.Loading
-			val result = repository.login(username.value, password.value)
+			val result = repository.login(username, password)
 			if (result != null) {
 				_loginState.value = ApiState.Success(result)
 			} else {
