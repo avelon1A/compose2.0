@@ -40,6 +40,7 @@ fun CoilImage(){
 			contentDescription = stringResource(R.string.description)
 		) {
 			val state = painter.state
+			
 			if (state is AsyncImagePainter.State.Loading || state is AsyncImagePainter.State.Error) {
 				CircularProgressIndicator()
 			} else {
