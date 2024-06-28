@@ -44,8 +44,16 @@ fun AppNavHost(navController: NavHostController) {
         composable<CoilScreen> {
             CoilScreen()
         }
+        composable<GradientScreen> {
+            GradientScreen()
+        }
+        composable<CameraScreen> {
+            CameraScreen()
+        }
+        composable<LoginScreen> {
+            LoginScreen()
+        }
         
-
     }
 }
 
