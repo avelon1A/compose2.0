@@ -63,3 +63,9 @@ Rapp/src/main/java/com/bosch/composewithkotlin20/data/model/request/LoginRequest
 Tapp/src/main/java/com/bosch/composewithkotlin20/data/model/response/LoginResponse.kt,7\7\77ba584f5f0354716f5bdd9d371393c7cf884f00
 p
 @app/src/main/java/com/bosch/composewithkotlin20/util/apiState.kt,c\5\c5fa1a27274f1dceaa03024ba434551171464787
+q
+Aapp/src/main/java/com/bosch/composewithkotlin20/util/ApiResult.kt,c\7\c7347dc7c691a47eecf38f448eae09c20fc43e42
+m
+=app/src/main/java/com/bosch/composewithkotlin20/util/State.kt,b\1\b1c30fb18e6c7bef01e791b075cfbe4bcf3391ef
+A
+gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4

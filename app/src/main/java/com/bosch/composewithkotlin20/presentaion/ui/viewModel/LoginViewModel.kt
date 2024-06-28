@@ -22,9 +22,13 @@ class LoginViewModel @Inject constructor(
 	
 	val username: StateFlow<String> get() = _username
 	val password: StateFlow<String> get() = _password
+	
 	private val _loginState = MutableStateFlow<ApiState<LoginResponse>>(ApiState.Initial)
 	val loginState: StateFlow<ApiState<LoginResponse>> = _loginState
 	
+//	val login = MutableStateFlow(ApiState.Initial)
+//		field = StateFlow()
+//
 	fun onUsernameChanged(newUsername: String) {
 		_username.value = newUsername
 	}
@@ -37,11 +41,7 @@ class LoginViewModel @Inject constructor(
 		viewModelScope.launch {
 			_loginState.value = ApiState.Loading
 			val result = repository.login(username.value, password.value)
-			if (result != null) {
-				_loginState.value = ApiState.Success(result)
-			} else {
-				_loginState.value = ApiState.Failure
-			}
+				_loginState.value = result
 		}
 	}
 }
