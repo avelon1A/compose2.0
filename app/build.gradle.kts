@@ -3,6 +3,8 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
     alias(libs.plugins.compose.compiler)
     alias(libs.plugins.kotlin.serialization)
+    alias(libs.plugins.ksp)
+    alias(libs.plugins.hilt)
 }
 
 android {
@@ -30,7 +32,11 @@ android {
                 "proguard-rules.pro"
             )
         }
+       
     }
+    
+    
+    
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -75,4 +81,10 @@ dependencies {
     implementation(libs.converter.gson)
     implementation(libs.coil)
     implementation(libs.coil.compose)
+    implementation(libs.androidx.camera.viewfinder.compose)
+    implementation (libs.ui)
+    implementation (libs.ui.tooling.preview)
+    ksp(libs.hilt.android.compiler)
+    implementation(libs.hilt.android)
+
 }
